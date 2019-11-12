@@ -1,0 +1,23 @@
+{
+  "name": "fullmotion",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "@firebase/database": "^0.5.11",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
+    "express": "~4.16.1",
+    "firebase": "^7.3.0",
+    "fs": "^0.0.1-security",
+    "hbs": "~4.0.4",
+    "http-errors": "~1.6.3",
+    "morgan": "~1.9.1",
+    "node-qrcode": "^0.0.4",
+    "nodemon": "^1.19.4",
+    "qr-image": "^3.2.0",
+    "qrcode": "^1.4.4"
+  }
+}
