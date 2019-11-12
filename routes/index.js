@@ -56,7 +56,7 @@ router.post('/bookerFuck', (req, res) => {
 
 
   console.log('./public/qr/' + qr_code_file_name);
-  res.render('booking', { title : "Full Motion", pic : '../public/qr/' + qr_code_file_name, uid: 'https://api.qrserver.com/v1/create-qr-code/?data=' + qr_txt + '&amp;size=100x100', uidl: qr_txt } )
+  res.render('booking', { title : "Full Motion", pic : '../public/qr/' + qr_code_file_name, uid: 'https://api.qrserver.com/v1/create-qr-code/?data=' + qr_txt + '&amp;size=400x400', uidl: qr_txt } )
 })
 
 module.exports = router;
