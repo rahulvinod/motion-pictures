@@ -38,6 +38,7 @@ router.post('/bookerFuck', (req, res) => {
 
   // Get the text to generate QR code
   let qr_txt = ID;
+
     
   // Generate QR Code from text
   var qr_png = qr.imageSync(qr_txt,{ type: 'png'})
@@ -52,8 +53,10 @@ router.post('/bookerFuck', (req, res) => {
       
   })
 
+
+
   console.log('./public/qr/' + qr_code_file_name);
-  res.render('booking', { title : "Full Motion", pic : '../public/qr/' + qr_code_file_name,qr_png } )
+  res.render('booking', { title : "Full Motion", pic : '../public/qr/' + qr_code_file_name, uid: 'https://api.qrserver.com/v1/create-qr-code/?data=' + qr_txt + '&amp;size=100x100', uidl: qr_txt } )
 })
 
 module.exports = router;
