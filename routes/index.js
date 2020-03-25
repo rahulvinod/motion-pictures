@@ -9,13 +9,7 @@ require('firebase/database');
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyBEI1f9q81dnRoqR9cqMYJDmKMEMkfKmXs",
-  authDomain: "fullmotionpicture.firebaseapp.com",
-  databaseURL: "https://fullmotionpicture.firebaseio.com",
-  projectId: "fullmotionpicture",
-  storageBucket: "fullmotionpicture.appspot.com",
-  messagingSenderId: "708185644840",
-  appId: "1:708185644840:web:21093a1912b3300f3d7a1d"
+  //your firebase id here
 };
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
