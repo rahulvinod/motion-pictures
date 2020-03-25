@@ -28,7 +28,7 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Full Motion' }); //ithupole kodukkanam.
 });
 
-router.post('/bookerFuck', (req, res) => {
+router.post('/motion-pictures', (req, res) => {
   var ID = '_' + Math.random().toString(36).substr(2, 9);
   database.ref('users/'+ID).set({
     name: req.body.name,
